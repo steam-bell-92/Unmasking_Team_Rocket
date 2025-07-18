@@ -11,8 +11,8 @@ st.set_page_config(
 
 st.write("# Welcome to my project! 👋")
 
-model = joblib.load("xgb_model.pkl")
-feature_columns = joblib.load("model_features.pkl")
+model = joblib.load("WEB/xgb_model.pkl")
+feature_columns = joblib.load("WEB/model_features.pkl")
 
 st.markdown(
     "[GitHub Repo 🔗](https://github.com/steam-bell-92/Unmasking_Team_Rocket/blob/main/CODES/Unmasking_Team_Rocket.ipynb)"
@@ -58,18 +58,23 @@ if submit:
         'Rare Item Holder': item,
     }
 
-    input_df = pd.DataFrame([input_dict])
-    input_encoded = pd.get_dummies(input_df)
+    input_df = pd.DataFrame([input_dict])\
+
+    input_df_num = input_df[['Age', 'Average Level of Pokemon', 'Win Ratio', 'Number of Migration', 'Rare Item Holder']]
+    input_df_cat = input_df.drop(columns=input_df_num.columns)
+    input_encoded_cat = pd.get_dummies(input_df_cat)
+    input_encoded = pd.concat([input_df_num, input_encoded_cat], axis=1)
     input_encoded = input_encoded.reindex(columns=feature_columns, fill_value=0)
+
 
     proba = model.predict_proba(input_encoded)[0][1]
     pred = int(proba >= 0.45)
 
     st.subheader("🔍 Prediction Result")
-    st.progress(int(proba * 100))  # ✅ This line must be inside 'if submit'
+    st.progress(int(proba * 100))
     st.caption("Model threshold: 0.45 (slightly aggressive to catch Team Rocket members)")
 
     if pred:
-        st.warning(f"🚨 Likely Team Rocket Member!\nConfidence: {proba*100:.2f}%")
+        st.warning(f"🚨 Likely Team Rocket Member!\nConfidence: {proba*100:.5f}%")
     else:
-        st.success(f"✅ Safe Trainer Detected.\nConfidence: {proba*100:.2f}%")
+        st.success(f"✅ Safe Trainer Detected.\nConfidence: {(1 - proba)*100:.5f}%")
