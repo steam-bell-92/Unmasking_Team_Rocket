@@ -66,6 +66,7 @@ Unmasking_Team_Rocket/
 ├── WEB
 |    ├── xgb_model.pkl                          🔹 Gathers best model with its parameters
 |    ├── model_features.pkl                     🔹 Gathers model features (columns for prediction)
+|    ├── requirements.txt                       🔹 Things required to make deployment work
 |    └── app.py                                 🔹 Streamlit code for deployment
 |
 ├── LICENSE                                     🔹 MIT License
