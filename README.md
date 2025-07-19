@@ -18,14 +18,14 @@ In real-world scenarios like security and fraud, threats may not look alike — 
 
 | Metric    | Value     |                                
 |-----------|-----------|                                
-| Accuracy  | `~0.92`   |                              
+| Accuracy  | `~0.916`   |                              
 | ROC-AUC   | `~0.80`   |                              
                                                                    
 ### 🔘 XGBoost Classifier
 
 | Metric     | Value     |
 |------------|-----------|
-| Accuracy   | `~0.92`   |
+| Accuracy   | `~0.905`   |
 | ROC-AUC    | `~0.79`   |
 
 ---
