@@ -1,14 +1,21 @@
 # 🚀 Unmaksing Team Rocket
-In real-world scenarios like security and fraud, threats may not look alike — but often act alike. Inspired by Team Rocket’s intent despite different roles, this project explores learning behavioral patterns to detect threat-like actions.
+In real-world scenarios like security and fraud detection, threats may not always look alike — but they often act alike. Inspired by Team Rocket’s consistent intent despite changing roles and disguises, this project explores how learning behavioral patterns can help identify threat-like actions, even when surface appearances vary.
 
 ---
 
 ## 🎯 Objective
 
-- Build a binary classifier to detect threat-like behavior
+- Build a binary classifier to detect threat-like behavior (here setect presence of Team Rocket Member)
 - Tackle an imbalanced dataset (82:18 non-threat to threat)
 - Use models like Random Forest and XGBoost
 - Evaluate using accuracy, precision, recall, and ROC-AUC
+
+> *To protect the world from threat…*  
+> *To catch attackers you won’t forget!*  
+> *Random Forest Classifier!*  
+> *XGBoost Classifier!*  
+> *Surrender now…*  
+> *Or prepare to blast off with insight!*
 
  ---
 
