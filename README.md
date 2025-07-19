@@ -5,7 +5,7 @@ In real-world scenarios like security and fraud detection, threats may not alway
 
 ## 🎯 Objective
 
-- Build a binary classifier to detect threat-like behavior (here setect presence of Team Rocket Member)
+- Build a binary classifier to detect threat-like behavior (here detect presence of Team Rocket Member)
 - Tackle an imbalanced dataset (82:18 non-threat to threat)
 - Use models like Random Forest and XGBoost
 - Evaluate using accuracy, precision, recall, and ROC-AUC
@@ -60,12 +60,12 @@ Unmasking_Team_Rocket/
 ├── CODES
 |    ├── Unmasking_Team_Rocket.ipynb            🔹 Jupyter notebook containing entire ML Workflow
 |    ├── unmaksing_team_rocket.py               🔹 Python File
-|    ├── Team_Rocket.png                        🔹 Image embeded in notebook
+|    ├── Team_Rocket.png                        🔹 Image embedded in notebook
 |    └── pokemon_team_rocket_dataset.csv        🔹 Dataset
 |
 ├── WEB
 |    ├── xgb_model.pkl                          🔹 Gathers best model with its parameters
-|    ├── model_features.pkl                     🔹 Gathers model features (columns for pediction)
+|    ├── model_features.pkl                     🔹 Gathers model features (columns for prediction)
 |    └── app.py                                 🔹 Streamlit code for deployment
 |
 ├── LICENSE                                     🔹 MIT License
