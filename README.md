@@ -50,7 +50,7 @@ In real-world scenarios like security and fraud detection, threats may not alway
 | Accuracy   | `~0.905`  |
 | ROC-AUC    | `~0.79`   |
 
-🔗 **Live App**: [Click here to try it out](https://huggingface.co/spaces/steam-bell-92/Unmasking_Team_Rocket)
+### 🔗 **Live App**: [Click here to try it out](https://huggingface.co/spaces/steam-bell-92/Unmasking_Team_Rocket)
 [![Hugging Face Spaces](https://img.shields.io/badge/Hosted%20on-Hugging%20Face-blue?logo=huggingface)](https://huggingface.co/spaces/steam-bell-92/Unmasking_Team_Rocket)
 ---
 
