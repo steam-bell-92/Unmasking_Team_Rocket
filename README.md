@@ -23,14 +23,14 @@ In real-world scenarios like security and fraud detection, threats may not alway
  
 |      Tool / Library        |                Task                 | 
 |----------------------------|-------------------------------------|
-| `**Python**`               | Core programming language           |
-| `**pandas**`               | Data manipulation and preprocessing | 
-| `**NumPy**`                | Numerical computations              |
-| `**scikit-learn**`         | Model training and evaluation       |
-| `**matplotlib / seaborn**` | Static data visualization           |
-| `**plotly**`               | Interactive visualizations          |
-| `**Streamlit**`            | Web app deployment                  |
-| `**joblib**`               |  Saving and loading ML models       |
+| `Python`               | Core programming language           |
+| `pandas`               | Data manipulation and preprocessing | 
+| `NumPy`                | Numerical computations              |
+| `scikit-learn`         | Model training and evaluation       |
+| `matplotlib / seaborn` | Static data visualization           |
+| `plotly`               | Interactive visualizations          |
+| `Streamlit`            | Web app deployment                  |
+| `joblib`               |  Saving and loading ML models       |
 
 ---
  
