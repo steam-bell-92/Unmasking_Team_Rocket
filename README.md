@@ -1,4 +1,4 @@
-# 🚀 Unmaksing Team Rocket
+# 🚀 Unmasking Team Rocket
 In real-world scenarios like security and fraud detection, threats may not always look alike — but they often act alike. Inspired by Team Rocket’s consistent intent despite changing roles and disguises, this project explores how learning behavioral patterns can help identify threat-like actions, even when surface appearances vary.
 
 ---
